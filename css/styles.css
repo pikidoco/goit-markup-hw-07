@@ -24,6 +24,8 @@ body {
   background-color: var(--background-color-white);
   font-style: normal;
   width: 100vw;
+  padding-left: 94px;
+  padding-right: 94px;
 }
 
 * {
@@ -486,7 +488,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  padding:30px 15px 60px;
+  padding:0px 15px 60px;
 }
 
 .customers-logo {
@@ -702,6 +704,15 @@ footer {
   padding-top: 60px;
 }
 
+.footer a {
+  display: flex;
+  justify-content: center;
+}
+
+.footer address {
+  text-align: center;
+}
+
 .global-footer a :hover,
 :focus {
   color: var(--text-hover-focus-color);
@@ -735,9 +746,7 @@ address {
 
 .find-us-on-container {
   display: block;
-  width: 206px;
-  padding-top: 15px;
-  padding-left: 70px;
+  padding-top: 60px;
 }
 
 .find-us-on-container h3 {
@@ -747,6 +756,7 @@ address {
   text-transform: uppercase;
   color: var(--background-color-white);
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .social-media {
@@ -777,10 +787,16 @@ address {
 
 .subscribe-container {
   display: flex;
-  width: 570px;
-  gap: 12px;
-  padding-left: 165px;
-  padding-top: 15px;
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.subscribe-container form{
+  width: 100%;
+  align-items: start;
 }
 
 .subscribe-container legend {
@@ -792,11 +808,13 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .email-and-button {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
 }
 
@@ -1167,6 +1185,7 @@ textarea:focus {
 
      .our-team {
       padding-top: 94px;
+
     }
      .team-comp {
       display: flex;
@@ -1176,15 +1195,18 @@ textarea:focus {
      }
 
      .regular-customers {
-      padding: 94px;
+      padding-top: 94px;
+      padding-bottom: 94px;
     }
     .regular-customers h2 {
       padding-bottom: 50px;
+      padding-top: 0
     }
+
      .customers {
       display: flex;
       justify-content: center;
-      gap: 30px;}
+      gap:30px;}
 
       footer {
         display: flex;
@@ -1193,12 +1215,52 @@ textarea:focus {
       .global-footer {
         display: flex;
         flex-direction: row;
+        align-items: baseline;
         width: 1200px;
         font-family: var(--text2-font-family);
         font-weight: 400;
         padding-top: 60px;
         padding-bottom: 60px;
       }
+      .footer a {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .footer address {
+        text-align:left;
+      }
+      .find-us-on-container {
+        display: block;
+        width: 206px;
+        padding-left: 70px;
+        padding-top: 0;
+      }
+      .find-us-on-container h3 {
+        text-align: left;}
 
-      
+        .subscribe-container {
+          display: flex;
+          width: 570px;
+          gap: 12px;
+          padding-left: 165px;
+          padding-top: 15px;
+        }
+
+        .subscribe-container legend {
+          text-align: left;}
+
+          .email-and-button {
+            display: flex;
+            flex-direction: row;
+            width: 570px;
+            gap: 12px;
+            align-items: center;
+          }
+
+          footer{
+            align-items: center;
+            justify-content: center;
+            padding-left: 94px;
+            padding-right: 94px;
+          }
 }
