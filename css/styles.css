@@ -56,13 +56,13 @@ h1 {
   margin-bottom: 30px;
 }
 
-.title-section {
+.title-section-mt {
   text-align: center;
   height: 600px;
   top: 80px;
   background-color: var(--title-footer-background-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/bg-h1-image.jpg");
+    url("../images/Header-mobile.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
@@ -280,24 +280,20 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: var(--button-background-color);
+  margin: 0px 15px;
 }
 
 .strong-points-container {
-  display: flex;
-  margin: auto;
-  width: 1170px;
-  padding-top: 94px;
+  display: block;
+  padding-top: 60px;
   gap: 30px;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .strong-points h3 {
+  text-align: center;
   font-family: var(--text2-font-family);
   font-weight: 700;
   font-size: 14px;
@@ -315,6 +311,7 @@ a:focus {
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
   line-height: 1.429em;
+  margin: 10px 15px 30px;
 }
 
 h2 {
@@ -327,6 +324,10 @@ h2 {
 }
 
 /* what-we-do*/
+
+.what-we-do {
+  display: none;
+}
 
 .what-we-do {
   padding-top: 94px;
@@ -378,7 +379,7 @@ h2 {
 
 .our-team {
   background-color: var(--button-background-color);
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .our-team h2 {
@@ -389,15 +390,17 @@ h2 {
 
 .team-comp {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 1170px;
+  width: 100%;
   margin: auto;
   gap: 30px;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 94px;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  align-items: center;
 }
 
 .card {
@@ -473,20 +476,17 @@ h2 {
 
 /*regular customers*/
 
-.regular-customers {
-  padding: 94px;
-}
-
 .regular-customers h2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-top: 60px;
 }
 
 .customers {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  padding:30px 15px 60px;
 }
 
 .customers-logo {
@@ -516,7 +516,7 @@ h2 {
 
 /*buttons*/
 
-.title-section .button {
+.title-section-mt .button {
   font-family: var(--text2-font-family);
   font-weight: 700;
   font-size: 16px;
@@ -531,7 +531,7 @@ h2 {
   height: 50px;
 }
 
-.title-section .button:hover {
+.title-section-mt .button:hover {
   background-color: var(--title-button-hover-color);
   color: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -685,18 +685,21 @@ h2 {
 
 footer {
   display: flex;
-  width: 100vw;
-  background-color: var(--title-footer-background-color);
+  flex-direction: column;
   justify-content: center;
+  background-color: var(--title-footer-background-color);
+  align-items: center;
 }
 
 .global-footer {
   display: flex;
-  width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
   font-family: var(--text2-font-family);
   font-weight: 400;
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .global-footer a :hover,
@@ -1059,6 +1062,37 @@ textarea:focus {
 
 @media screen and (min-width:768px) {
 
+  .title-section-mt {
+    text-align: center;
+    height: 600px;
+    top: 80px;
+    background-color: var(--title-footer-background-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/Header-tablet.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+  .title-section-mt .button {
+    font-family: var(--text2-font-family);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.367em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--background-color-white);
+    background-color: var(--text-hover-focus-color);
+    width: 200px;
+    height: 50px;
+  }
+  
+  .title-section-mt .button:hover {
+    background-color: var(--title-button-hover-color);
+    color: #ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 /* mobile */
@@ -1071,4 +1105,100 @@ textarea:focus {
 
 @media screen and (min-width:1158px){
 
+  .title-section {
+    text-align: center;
+    height: 600px;
+    top: 80px;
+    background-color: var(--title-footer-background-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/bg-h1-image.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+  .title-section-mt {
+    display: none;
+  }
+  .title-section .button {
+    font-family: var(--text2-font-family);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.367em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--background-color-white);
+    background-color: var(--text-hover-focus-color);
+    width: 200px;
+    height: 50px;
+  }
+  
+  .title-section .button:hover {
+    background-color: var(--title-button-hover-color);
+    color: #ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .strong-points-container {
+    display: flex;
+    margin: auto;
+    width: 1170px;
+    padding-top: 94px;
+    gap: 30px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 93px;
+  }
+  .icon-box {
+    width: 270px;
+  height: 120px;
+  margin: 0;
+  }
+  .strong-points h3 {
+    text-align: start;}
+
+    .strong-points p {
+      margin: 0;}
+      
+     .what-we-do {
+      display:contents;
+     }
+
+     .our-team {
+      padding-top: 94px;
+    }
+     .team-comp {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding-top: 50px;
+     }
+
+     .regular-customers {
+      padding: 94px;
+    }
+    .regular-customers h2 {
+      padding-bottom: 50px;
+    }
+     .customers {
+      display: flex;
+      justify-content: center;
+      gap: 30px;}
+
+      footer {
+        display: flex;
+        flex-direction:row;}
+
+      .global-footer {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        font-family: var(--text2-font-family);
+        font-weight: 400;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      
 }
