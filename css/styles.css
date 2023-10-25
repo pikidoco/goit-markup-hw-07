@@ -24,8 +24,6 @@ body {
   background-color: var(--background-color-white);
   font-style: normal;
   width: 100vw;
-  padding-left: 94px;
-  padding-right: 94px;
 }
 
 * {
@@ -398,7 +396,7 @@ h2 {
   margin: auto;
   gap: 30px;
   padding-top: 30px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -482,13 +480,16 @@ h2 {
   display: flex;
   justify-content: center;
   padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .customers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  padding:0px 15px 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
 }
 
 .customers-logo {
@@ -691,6 +692,7 @@ footer {
   justify-content: center;
   background-color: var(--title-footer-background-color);
   align-items: center;
+  position: relative;
 }
 
 .global-footer {
@@ -874,7 +876,8 @@ address {
 
 .email-and-button svg {
   position: absolute;
-  margin-left: 510px;
+  margin-top: 80px;
+  margin-left: 90px
 }
 
 /* modalul*/
@@ -1122,7 +1125,7 @@ textarea:focus {
 /* desktop */
 
 @media screen and (min-width:1158px){
-
+ 
   .title-section {
     text-align: center;
     height: 600px;
@@ -1192,6 +1195,7 @@ textarea:focus {
       flex-direction: row;
       width: 100%;
       padding-top: 50px;
+      padding-bottom: 94px;
      }
 
      .regular-customers {
@@ -1206,11 +1210,13 @@ textarea:focus {
      .customers {
       display: flex;
       justify-content: center;
-      gap:30px;}
+      gap:30px;
+    padding-bottom: 0;}
 
       footer {
         display: flex;
-        flex-direction:row;}
+        flex-direction:row;
+        margin-left:-115px;}
 
       .global-footer {
         display: flex;
@@ -1263,4 +1269,8 @@ textarea:focus {
             padding-left: 94px;
             padding-right: 94px;
           }
+          .email-and-button svg {
+            position: absolute;
+            margin-left: 510px;
+          margin-top: -10px;}
 }
