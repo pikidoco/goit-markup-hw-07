@@ -60,9 +60,10 @@ button {
   color: var(--background-color-white);
   font-family: var(--text1-font-family);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
+    text-align: center;
 }
 
 header {
@@ -1162,9 +1163,11 @@ textarea:focus {
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+    display: block;
+    justify-content: center;
   }
 
-  h1 {
+  .title-section h1 {
     font-family: var(--text1-font-family);
     font-weight: 900;
     font-size: 44px;
