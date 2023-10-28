@@ -117,10 +117,26 @@ header {
 }
 
 .global-header {
+  display: flex;
   width: 100%;
-  
+  padding: 15px;
+  align-content: center;
 }
 
+
+
+.top-navigation {
+  display: none;
+}
+
+.nav-contact {
+  display: none;
+}
+
+.nav-contact-email {
+  display: none;
+}
+/*
 .logo-mobile {
   display: flex;
   padding: 10px 16px;
@@ -136,13 +152,14 @@ header {
 .logo-mobile :hover {
   color: var(--text-hover-focus-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/
 
 /*navigation bar*/
 
+/*
 .global-header>:not(.logo-mobile, .menu-button) {
   display: none;
-}
+}*/
 
 
 header {
@@ -155,10 +172,9 @@ header {
 .first-part-header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  width: 100%;
 }
 
 .menu-nav {
@@ -171,13 +187,6 @@ header {
 .menu-nav :nth-child(2) {
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.nav-contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 .nav-contact-email {
@@ -1288,14 +1297,20 @@ padding-bottom: 64px;
 
 @media screen and (min-width:768px) {
 
+
+/*
   .global-header>:not(.logo-mobile) {
     display: flex;
-  }
+  }*/
 
   .first-word,
   .second-word,
   .third-word {
 font-size: 24px;
+  }
+
+  .top-navigation {
+    display: contents;
   }
 .nav-contact a {
   font-size: 12px;
@@ -1308,9 +1323,11 @@ font-size: 24px;
   width:10px;
   height:14px;
 }
+
+/*
   .logo-mobile {
     display: none;
-  }
+  }*/
 
   .global-header {
   width: 100vw;
@@ -1477,7 +1494,7 @@ height:92px;
   .first-part-footer {
     display: contents;
   }
-
+/*
   .global-header>:not(.logo-mobile) {
     display: flex;
   }
@@ -1485,6 +1502,7 @@ height:92px;
   .logo-mobile {
     display: none;
   }
+*/
    .first-word,
   .second-word,
   .third-word {
@@ -1498,11 +1516,14 @@ font-size: 26px;
     align-items: center;
     width: 1200px;
   }
-
+.first-part-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
   .menu-nav {
     padding-right: 330px;
   }
-
+ 
   .nav-contact {
     display: flex;
     flex-direction: row;
