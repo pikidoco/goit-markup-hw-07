@@ -25,7 +25,7 @@ img {
   height: auto;
 }
 
-@media screen and (max-width:428px) {
+@media screen and (min-width:428px) {
   .top-navigation {
     display: none;
   }
@@ -46,7 +46,7 @@ img {
 }
 
 /*mobile*/
-@media screen and (max-width:428px) {
+@media screen and (min-width:428px) {
   body {
     font-family: sans-serif;
     font-family: var(--text2-font-family);
