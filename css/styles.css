@@ -25,7 +25,7 @@ img {
   height: auto;
 }
 
-@media screen and (min-width:428px) {
+@media screen and (max-width:428px) {
   .top-navigation {
     display: none;
   }
@@ -46,7 +46,7 @@ img {
 }
 
 /*mobile*/
-@media screen and (min-width:428px) {
+@media screen and (max-width:428px) {
   body {
     font-family: sans-serif;
     font-family: var(--text2-font-family);
@@ -1739,5 +1739,42 @@ img {
     justify-content: center;
     align-items: center;
     width: 1200px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx),
+(min-width: 1158px) {
+  .title-section {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/bg-h1-image.jpg) no-repeat rgba(47, 48, 58, 1);
+    background-size: cover;
+  }
+}
+
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx),
+(min-width: 768px) and (max-width: 1157px) {
+  .title-section {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Header-tablet.jpg) no-repeat rgba(47, 48, 58, 1);
+    background-size: cover;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx),
+(max-width: 767px) {
+  .title-section {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Header-mobile.jpg) no-repeat rgba(47, 48, 58, 1);
+    background-size: cover;
   }
 }
