@@ -25,6 +25,20 @@ img {
   height: auto;
 }
 
+@media screen and (min-width:428px) {
+  .top-navigation {
+    display: none;
+  }
+
+  .nav-contact {
+    display: none;
+  }
+
+  .nav-contact-email {
+    display: none;
+  }
+}
+
 /**/
 /*mobile*/
 @media screen and (min-width:428px) {
@@ -130,8 +144,6 @@ img {
     padding: 15px;
     align-content: center;
   }
-
-
 
   .top-navigation {
     display: none;
