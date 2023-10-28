@@ -54,17 +54,6 @@
      
      <header>
       <div class="global-header">
-        <!--<div class="logo-mobile">
-          <a href="index.html"
-            ><span class="first-word">Web</span
-            ><span class="second-word">Studio</span></a>
-
-            <div class="menu-button js-open-menu">
-              <svg width="40px" height="40px">
-                <use href="./images/symbol-defs.svg#icon-menu"></use>
-              </svg>
-            </div>
-        </div>-->
         <div class="first-part-header">
           <div class="logo">
             <a href="index.html"
@@ -225,12 +214,35 @@
         <h2>Our Team</h2>
         <ul class="team-comp">
           <li class="card">
-            <img
-              src="./images/Christopher-Walker.jpg"
-              alt="Christopher Walker"
-              width="270"
-              height="260"
-            />
+            <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/Christopher-Walker-d.jpg 1x,
+                    ./images/Christopher-Walker-d-2x.jpg 2x
+                  "
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/Christopher-Walker-t.jpg 1x,
+                    ./images/Christopher-Walker-t-2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/Christopher-Walker-m.jpg 1x,
+                    ./images/Christopher-Walker-m-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Christopher-Walker-m.jpg"
+                  alt="Christoper Walker"
+                  height="260"
+                />
+              </picture>
             <div class="card-footer">
               <h3>Christopher Walker</h3>
               <span>Product Designer</span>
@@ -259,12 +271,35 @@
             </div>
           </li>
           <li class="card">
-            <img
-              src="./images/Kylie-Evans.jpg"
-              alt="Kylie Evans"
-              width="270"
-              height="260"
-            />
+            <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/Kylie-Evans-d.jpg 1x,
+                    ./images/Kylie-Evans-d-2x.jpg 2x
+                  "
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/Kylie-Evans-t.jpg 1x,
+                    ./images/Kylie Evans-t-2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/Kylie-Evans-m.jpg 1x,
+                    ./images/Kylie-Evans-m-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Kylie-Evans-m.jpg"
+                  alt="Kylie Evans"
+                  height="260"
+                />
+              </picture>
             <div class="card-footer">
               <h3>Kylie Evans</h3>
               <span>Frontend Developer</span>
@@ -295,12 +330,35 @@
             </div>
           </li>
           <li class="card">
-            <img
-              src="./images/Ryan-Harris.jpg"
-              alt="Ryan Harris"
-              width="270"
-              height="260"
-            />
+             <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/Ryan-Harris-d.jpg 1x,
+                    ./images/Ryan-Harris-d-2x.jpg 2x
+                  "
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/Ryan-Harris-t.jpg 1x,
+                    ./images/Ryan-Harris-t-2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/Ryan-Harris-m.jpg 1x,
+                    ./images/Ryan-Harris-m-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Ryan-Harris-m.jpg"
+                  alt="Ryan Harris"
+                  height="260"
+                />
+              </picture>
             <div class="card-footer">
               <h3>Ryan Harris</h3>
               <span>Marketing</span>
@@ -331,12 +389,35 @@
             </div>
           </li>
           <li class="card">
-            <img
-              src="./images/Tyler-Moore.jpg"
-              alt="Tyler Moore"
-              width="270"
-              height="260"
-            />
+            <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/Tyler-Moore-d.jpg 1x,
+                    ./images/Ryan-Harris-d-2x.jpg 2x
+                  "
+              />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/Tyler-Moore-t.jpg 1x,
+                    ./images/Tyler-Moore-t-2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/Tyler-Moore-m.jpg 1x,
+                    ./images/Tyler-Moore-m-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Tyler-Moore-m.jpg"
+                  alt="Tyler-Moore"
+                  height="260"
+                />
+              </picture>
             <div class="card-footer">
               <h3>Tyler Moore</h3>
               <span>UI Designer</span>
