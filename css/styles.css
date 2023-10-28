@@ -25,6 +25,7 @@ img {
   height: auto;
 }
 
+/**/
 /*mobile*/
 @media screen and (min-width:428px) {
   body {
@@ -143,32 +144,6 @@ img {
   .nav-contact-email {
     display: none;
   }
-
-  /*
-.logo-mobile {
-  display: flex;
-  padding: 10px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-mobile :focus {
-  color: var(--text-hover-focus-color);
-}
-
-.logo-mobile :hover {
-  color: var(--text-hover-focus-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
-
-  /*navigation bar*/
-
-  /*
-.global-header>:not(.logo-mobile, .menu-button) {
-  display: none;
-}*/
-
 
   header {
     width: 100vw;
@@ -663,7 +638,7 @@ img {
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #eee;
     background-color: var(--background-color-white);
-    width: 370px;
+    width: 100%;
     cursor: pointer;
   }
 
@@ -1269,20 +1244,6 @@ img {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* tablet*/
 
 @media screen and (min-width:768px) {
@@ -1450,23 +1411,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* desktop */
 
 @media screen and (min-width:1158px) {
@@ -1497,15 +1441,6 @@ img {
     display: contents;
   }
 
-  /*
-  .global-header>:not(.logo-mobile) {
-    display: flex;
-  }
-
-  .logo-mobile {
-    display: none;
-  }
-*/
   .first-word,
   .second-word,
   .third-word {
