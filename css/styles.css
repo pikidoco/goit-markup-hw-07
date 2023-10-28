@@ -38,9 +38,6 @@ img {
     display: none;
   }
 
-  .js-menu-container .button {
-    display: flex;
-  }
 
   .js-menu-container.is-open {
     display: flex;
