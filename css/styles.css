@@ -38,8 +38,19 @@ img {
     display: none;
   }
 
-  .js-menu-container {
-    display: contents;
+  .js-menu-container .button {
+    display: flex;
+  }
+
+  .js-menu-container.is-open {
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 40px;
+    padding-top: 48px;
+    z-index: 1;
   }
 }
 
@@ -1135,21 +1146,6 @@ img {
   .menu-button:hover,
   .menu-button:focus {
     fill: var(--text-hover-focus-color);
-  }
-
-  .js-menu-container {
-    display: none;
-  }
-
-  .js-menu-container.is-open {
-    display: flex;
-    position: fixed;
-    background-color: #fff;
-    width: 100vw;
-    height: 100vh;
-    padding-left: 40px;
-    padding-top: 48px;
-    z-index: 1;
   }
 
   .menu-drawer-navigation {
