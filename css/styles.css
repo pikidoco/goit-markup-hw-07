@@ -37,30 +37,6 @@ img {
   display: none;
 }
 
-.js-close-menu svg:focus {
-  fill: var(--text-hover-focus-color);
-}
-
-.js-close-menu svg:hover {
-  fill: var(--text-hover-focus-color);
-}
-
-.menu-button svg:focus {
-  fill: var(--text-hover-focus-color);
-}
-
-.menu-button svg:hover {
-  fill: var(--text-hover-focus-color);
-}
-
-.close-btn:focus {
-  fill: var(--text-hover-focus-color);
-}
-
-.close-btn:hover {
-  fill: var(--text-hover-focus-color);
-}
-
 
 body {
   font-family: sans-serif;
