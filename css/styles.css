@@ -37,6 +37,16 @@ img {
   .nav-contact-email {
     display: none;
   }
+
+  .js-close-menu svg:hover,
+  .js-close-menu svg:focus {
+    fill: var(--text-hover-focus-color);
+  }
+
+  .menu-button svg:hover,
+  .menu-button svg:focus {
+    fill: var(--text-hover-focus-color);
+  }
 }
 
 body {
@@ -1157,7 +1167,10 @@ textarea:focus {
 }
 
 .menu-drawer-navigation {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 48px;
 }
 
 .js-menu-container .js-close-menu {
@@ -1187,7 +1200,6 @@ textarea:focus {
   flex-direction: column;
   gap: 32px;
   align-content: flex-start;
-  padding-bottom: 300px;
 }
 
 .mobile-menu li {
